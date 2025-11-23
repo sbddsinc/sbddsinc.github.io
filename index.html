@@ -128,6 +128,29 @@
       font-size: 1.1rem;
       padding: 0 1rem;
     }
+    .tagline {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--secondary-color);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .subheading {
+      text-align: center;
+      margin: 1.5rem 0 1rem;
+      font-size: 1.4rem;
+      color: var(--primary-color);
+    }
+    .bio-details {
+      max-width: 900px;
+      margin: 0 auto 1.5rem;
+    }
+    .bio-details p {
+      text-align: left;
+    }
+    .text-left {
+      text-align: left !important;
+    }
     section img {
       display: block;
       max-width: 300px;
@@ -180,6 +203,13 @@
       margin-right: 2rem;
       padding-left: 1.5rem;
       position: relative;
+    }
+    .service-detail {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.95rem;
+      color: #555;
+      font-weight: 400;
     }
     .services-list li::before {
       content: "✓";
@@ -427,9 +457,15 @@
   <main class="container">
     <!-- About Us Section -->
     <section id="bio">
-      <h2>About Us</h2>
-      <p>Learn more about our practice and our team of dental professionals.</p>
-      <h3 style="text-align: center; margin-bottom: 1rem;">Meet Our Dentists</h3>
+      <h2>Meet Dr. Saeed Bigdeli</h2>
+      <p class="tagline">Caring. Compassionate. Committed to Your Smile.</p>
+      <div class="bio-details">
+        <p>Dr. Saeed Bigdeli, a trusted Simi Valley dentist, is dedicated to providing high-quality, patient-centered dental care in a warm and welcoming environment. A proud graduate of the University of Southern California (USC) School of Dentistry, Dr. Bigdeli combines advanced clinical expertise with genuine compassion for every patient he serves.</p>
+        <p>Dr. Bigdeli's personal journey has shaped his caring approach to dentistry. At just 14 years old, he moved to a new country on his own, an experience that instilled in him values of resilience, kindness, and empathy. These qualities are at the heart of his practice philosophy: helping every patient feel comfortable, confident, and cared for.</p>
+        <p>Throughout his career, Dr. Bigdeli has been actively involved in community outreach programs, including AYUDA, the USC Mobile Clinic, and a General Practice Residency at Mount Sinai School of Medicine in New York. These experiences reinforced his belief that dentistry is about more than treating teeth; it's about improving lives through compassionate care.</p>
+        <p>Today, Dr. Bigdeli continues to expand his expertise in family, cosmetic, and restorative dentistry, ensuring that every patient receives modern, comfortable, and effective treatment.</p>
+      </div>
+      <h3 class="subheading">Meet Our Dentist</h3>
       <div class="dentists">
         <div class="dentist">
           <img src="imgs/one.jpeg" alt="Dr. Saeed Bigdeli" />
@@ -440,48 +476,63 @@
               <p><strong>Education:</strong></p>
               <ul>
                 <li>B.S. in Biochemistry &amp; Business,  State University of New York</li>
-                <li>D.D.S., University of Southern California (USC) (Cum Laude)</li>
+                <li>D.D.S., University of Southern California (USC), Cum Laude</li>
               </ul>
               <p><strong>Postgraduate Training:</strong></p>
               <ul>
-                <li>General Practice Residency trained/certified, Mount Sinai School of Medicine</li>
+                <li>General Practice Residency, Mount Sinai School of Medicine (New York)</li>
               </ul>
+              <p><strong>Community &amp; Service:</strong></p>
+              <ul>
+                <li>AYUDA outreach initiatives</li>
+                <li>USC Mobile Clinic</li>
+              </ul>
+              <p>He blends advanced clinical expertise with a compassionate chairside manner, delivering family, cosmetic, and restorative care tailored to each patient.</p>
             </div>'>
               View Bio
             </a>
           </p>
         </div>
       </div>
-      <p>
-        Our dentists are deeply committed to providing high-quality dental care. Driven by their passion for excellence and patient-centered treatment, they decided to open their own dental office. This allows them to create a welcoming environment where they can offer the best possible care, prioritize patient comfort, and utilize the latest advancements in dentistry to improve oral health and overall well-being.
-      </p>
+      <div class="bio-details">
+        <h3>Why Choose Simi Valley Dental Office</h3>
+        <p class="tagline text-left">Where Honesty, Trust, and Quality Care Come First</p>
+        <p>When Dr. Bigdeli founded Simi Valley Dental Office, his mission was simple: to create a dental practice where patients always come first. After working in various dental settings, he saw how insurance limitations and business goals sometimes overshadowed patient care. Determined to make a difference, he established a practice built on integrity, transparency, and personalized attention.</p>
+        <p>At Simi Valley Dental Office, every treatment plan is guided by what's best for the patient rather than what insurance happens to cover. The caring team takes time to listen, understand, and provide custom care designed for your long-term oral health and a beautiful smile.</p>
+        <p>Conveniently located in Simi Valley, CA, the office provides a relaxing, family-friendly atmosphere where every patient is treated with honesty and respect. We believe in doing what's right, not just what's easy, because your smile deserves nothing less.</p>
+      </div>
+      <div class="bio-details">
+        <h3>A Note of Gratitude</h3>
+        <p>Reflecting on his journey, Dr. Bigdeli is deeply thankful for the mentors who have guided him along the way. Recently, he reconnected with two of his esteemed USC professors, Dr. Roberto Roges and Dr. Rafael Roges, Director of the Advanced Dental Education Program in Endodontics. Sharing a meal and celebrating how far he has come reminded Dr. Bigdeli of the importance of mentorship, growth, and gratitude. Their continued guidance inspires his commitment to excellence in patient care and lifelong learning.</p>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services">
       <h2>Our Services</h2>
+      <!-- <p class="text-left"> -->
       <p>
-        We offer a wide range of dental treatments to help you achieve a healthy and beautiful smile.
-        <br/>Our operating hours are <strong>Monday through Friday, 9 AM – 6 PM</strong>, and
-        <strong>Saturday by appointment only</strong>.
-        <br/>Call us today to schedule your appointment!
+        We offer a full range of dental services so every member of your family can enjoy a healthy, confident smile:
+      </p>
+      <div class="services-list-contrainer">
+        <ul class="services-list">
+          <li><strong>Preventive and family dentistry</strong><span class="service-detail">Checkups &bull; Cleanings &bull; Fluoride treatments</span></li>
+          <li><strong>Cosmetic dentistry</strong><span class="service-detail">Teeth whitening &bull; Veneers &bull; Smile makeovers</span></li>
+          <li><strong>Restorative dentistry</strong><span class="service-detail">Crowns &bull; Bridges &bull; Dental implants</span></li>
+          <li><strong>Emergency dental care</strong><span class="service-detail">Root canals &bull; Extractions</span></li>
+        </ul>
+      </div>
+      <!-- <p class="text-left"> -->
+      <p>
+        Our operating hours are <strong>Monday through Friday, 9 AM &ndash; 6 PM</strong>, and <strong>Saturday by appointment only</strong>.
+      </p>
+      <!-- <p class="text-left"> -->
+      <p>
+        Call us today to schedule your appointment!
         <br/><span itemprop="telephone" class="modern-phone">
 		      &#128222;<a href="tel:+18051234567" class="phone-number">+1 (805) 583-3339</a>
         </span>
       </p>
-      <p>Our services are as follows:</p>
-      <div class="services-list-contrainer">
-        <ul class="services-list">
-          <li><strong>General Dentistry</strong></li>
-          <li><strong>Endodontics</strong></li>
-          <li><strong>Oral Surgery</strong></li>
-          <li><strong>Implants</strong></li>
-          <li><strong>Dental Aesthetics</strong></li>
-          <li><strong>Dental prostheses</strong></li>
-          <li><strong>Periodontics</strong></li>
-          <li><strong>Pediatrics</strong></li>
-        </ul>
-      </div>
     </section>
 
     <!-- Location Section -->
